@@ -3,7 +3,7 @@ import './App.css'
 import TaskList from './components/TaskList'
 import NewTaskForm from './components/NewTaskForm'
 
-export const apiPath = 'http://localhost:3000/api/'
+export const apiPath = `http://localhost:3000/api/`
 
 function App() {
   const [tasks, setTasks] = useState([])
