@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FiCircle, FiXCircle } from 'react-icons/fi'
 import { FaCheckCircle } from 'react-icons/fa'
 import { useState } from 'react'

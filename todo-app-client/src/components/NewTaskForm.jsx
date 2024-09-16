@@ -1,13 +1,9 @@
+/* eslint-disable react/prop-types */
 import { FiPlus } from 'react-icons/fi'
 import { useState } from 'react'
 import { apiPath } from '../App'
 
-export default function NewTaskForm({ refreshLists }) //     {
-//   refreshLists,
-// }: {
-//   refreshLists: () => Promise<void>
-// }
-{
+export default function NewTaskForm({ refreshLists }) {
   const [newTask, setNewTask] = useState('')
 
   async function addTask(name) {

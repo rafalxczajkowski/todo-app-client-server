@@ -2,22 +2,19 @@
 
 ## Description
 
-Todo app with separately built frontend and backend parts.
-Frontend part has been built using React and TypeScript, backend part with Node, Express, MongoDB.
+Todo app with frontend and backend parts.
+Frontend part has been built using React, backend with Node, Express and MongoDB.
 
-The application allows to add, remove and edit tasks. Doesn't have authentication.
+The application allows to add, remove and edit tasks.
 
 ## Installation
 
-1. Clone both repositories.
-2. Run server.
-   1. Go to 'server' directiory.
-   2. Run `npm install`.
-   3. Run `npm start`.
-3. Run client.
-   1. Go to 'client' directory.
-   2. Run `npm install`.
-   3. Run `npm start`.
+1. Clone.
+2. Install.
+   1. Go to app's main directory.
+   2. Run `npm run build`.
+3. Run.
+   1. Run `npm start`.
 
 ## Usage
 

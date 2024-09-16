@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { TaskRow } from './TaskRow'
 
 export default function TaskList({ tasks, refreshLists }) {
