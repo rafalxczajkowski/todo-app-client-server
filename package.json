@@ -1,0 +1,28 @@
+{
+  "name": "todo-app-client-server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&& node todo-app-server/server.js",
+    "dev": "set NODE_ENV=development&& nodemon todo-app-server/server.js",
+    "build": "npm install && npm install --prefix todo-app-client && npm run build --prefix todo-app-client"
+  },
+  "keywords": [],
+  "author": "Rafal Czajkowski",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": "^20.17.0"
+  }
+}

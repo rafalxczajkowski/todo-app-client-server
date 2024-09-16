@@ -1,0 +1,126 @@
+:root {
+  --background-color: #282c34;
+  --on-hover-background-color: #474747;
+  --completed-color: #a0f000;
+  --delete-color: #ff0000;
+  --row-width: 400px;
+  --icon-width: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h3 {
+  border-bottom: 2px solid var(--completed-color);
+}
+
+ul {
+  padding: 0;
+}
+
+.task-row,
+.form-row {
+  width: var(--row-width);
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  margin: 10px;
+}
+
+.task-row {
+  box-shadow: 1px 1px 3px #bebebe83, -1px -1px 3px #ffffff83;
+}
+
+.task-row:hover {
+  background-color: var(--on-hover-background-color);
+}
+
+.task-row input {
+  background: none;
+}
+
+.task-row.completed .check-icon-container {
+  color: var(--completed-color);
+}
+
+.task-row.completed input {
+  text-decoration-line: line-through;
+}
+
+.task-row .delete-icon-container {
+  display: none;
+}
+
+.task-row:hover .delete-icon-container {
+  display: flex;
+}
+
+.task-row .delete-icon-container:hover {
+  color: var(--delete-color);
+}
+
+.icon-container {
+  /* width: var(--icon-width); */
+  display: flex;
+  align-items: center;
+  padding-right: 3px;
+}
+
+.icon-container:active {
+  transform: translate(0px, 2px);
+}
+
+input {
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.task-name-input {
+  border: none;
+  margin: 0 4px;
+}
+
+.add-task-input {
+  margin-left: 4px;
+  padding: 0 2px;
+  height: 30px;
+  border: 1px solid var(--on-hover-background-color);
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  width: 60px;
+  height: 32px;
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  border-radius: 0 4px 4px 0;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: var(--on-hover-background-color);
+}
+
+button:active {
+  border: 1px solid var(--completed-color);
+  color: var(--completed-color);
+}
