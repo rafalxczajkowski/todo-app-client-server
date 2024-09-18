@@ -7,7 +7,8 @@
   "scripts": {
     "start": "set NODE_ENV=production&& node todo-app-server/server.js",
     "dev": "set NODE_ENV=development&& nodemon todo-app-server/server.js",
-    "build": "npm install && npm install --prefix todo-app-client && npm run build --prefix todo-app-client"
+    "buildall": "npm install && npm install --prefix todo-app-client && npm run build --prefix todo-app-client",
+    "build": "npm install"
   },
   "keywords": [],
   "author": "Rafal Czajkowski",

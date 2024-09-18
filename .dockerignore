@@ -1,10 +1,9 @@
 node_modules
 .env
-todo-app-client/node_modules
-todo-app-client/dist
-todo-app-client/eslint.config.js
 Dockerfile*
 .gitignore
 *.md
 *.txt
 compose.yaml
+todo-app-client/*
+!todo-app-client/dist
